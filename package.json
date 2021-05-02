@@ -1,0 +1,21 @@
+{
+  "name": "waxom",
+  "version": "1.0.0",
+  "description": "free PSD shj portfolio page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "free",
+    "PSD",
+    "shj",
+    "portfolio",
+    "page"
+  ],
+  "author": "Shin hyuk-jun",
+  "license": "ISC",
+  "dependencies": {
+    "swiper": "^6.5.9"
+  }
+}

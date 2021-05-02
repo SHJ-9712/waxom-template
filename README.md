@@ -1,0 +1,2 @@
+# waxom-template
+ template page
