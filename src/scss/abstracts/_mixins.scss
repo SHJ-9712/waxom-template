@@ -1,0 +1,28 @@
+@charset "utf-8";
+@mixin prefix($property, $value, $prefixes: ()) {
+    @each $prefix in $prefixes {
+        -#{$prefix}-#{$property}: $value;
+    }
+    #{$property}: $value;
+}
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+@mixin translate($x, $y) {
+    @include prefix(transform, translate($x, $y), webkit moz ms o);
+}
+
+@mixin tablet {
+    @media screen and (min-width: 48rem) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media screen and (min-width: 64rem) {
+        @content;
+    }
+}
