@@ -1,0 +1,43 @@
+body {
+    font-size: 16px;
+    @extend %montserrat-light;
+    color: $default-color;
+}
+ol,
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+// class
+.container {
+    padding: 0 1.3125rem;
+    @include desktop {
+        max-width: 73.125rem;
+        margin: 0 auto;
+    }
+}
+.blind {
+    position: absolute;
+    clip: rect(0px, 0px, 0px, 0px);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+.clearfix {
+    *zoom: 1;
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
