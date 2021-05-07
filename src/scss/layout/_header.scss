@@ -10,8 +10,10 @@ header {
     .container {
         .logo {
             margin: 0;
-            @include position(absolute, $top: 50%, $left: 50%);
-            @include translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @include prefix(transform, translate(-50%, -50%), webkit moz ms o);
             a {
                 width: 182px;
                 height: 56px;
