@@ -1,0 +1,80 @@
+@charset "utf-8";
+header {
+    width: 100%;
+    padding: 1.25rem 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .4);
+    .container {
+        .logo {
+            margin: 0;
+            @include position(absolute, $top: 50%, $left: 50%);
+            @include translate(-50%, -50%);
+            a {
+                width: 182px;
+                height: 56px;
+                display: block;
+                background: url(../images/logo_dark.png) no-repeat;
+                background-size: cover;
+            }
+        }
+        .gnb {
+            ul {
+                padding: 0;
+                font-size: 0;
+                li {
+                    display: inline-block;
+                    line-height: 56px;
+                }
+            }
+            .categories {
+                display: none;
+                li {
+                    margin-left: 1.875rem;
+                    font-size: 0.875rem;
+                    color: #fff;
+                    a:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+            .iconMenu {
+                li {
+                    width: 21px;
+                    a, button[type="button"] {
+                        width: 100%;
+                        padding: 0;
+                        vertical-align: middle;
+                        svg {
+                            fill: #707070;
+                            vertical-align: middle;
+                        }
+                    }
+                    &:last-of-type {
+                        margin-left: 1.5rem;
+                    }
+                }
+                .toggleMenu {
+                    margin-left: 1.625rem;
+                    float: right;
+                    span {
+                        height: 3px;
+                        display: block;
+                        background-color: #707070;
+                        &:nth-of-type(2) {
+                            margin: 4px 0;
+                        }
+                    }
+                }
+                .searchBtn {
+                    float: right;
+                }
+            }
+        }
+        .searchForm {
+            display: none;
+        }
+    }
+}
