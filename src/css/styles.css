@@ -369,7 +369,43 @@ header .container .gnb .iconMenu .searchBtn {
   float: right;
 }
 header .container .searchForm {
-  display: none;
+  width: 100%;
+  padding: 3.125rem 0;
+  background-color: #555;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+header .container .searchForm form {
+  width: 50%;
+  max-width: 32rem;
+  margin: 0 auto;
+  position: relative;
+}
+header .container .searchForm form input[type=text] {
+  width: 100%;
+  padding: 14px;
+  color: #fff;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  box-sizing: border-box;
+}
+header .container .searchForm form button[type=submit] {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+header .container .searchForm form button[type=submit] svg {
+  fill: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */
