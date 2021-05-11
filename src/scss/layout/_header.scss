@@ -76,15 +76,19 @@ header {
             }
         }
         .searchForm {
+            display: none;
             width: 100%;
-            padding: 3.125rem 0;
+            height: 0;
             background-color: $default-color;
             position: absolute;
             top: 100%;
             left: 0;
+            overflow: hidden;
+            transition: all 0.5s;
             form {
                 width: 50%;
                 max-width: 32rem;
+                padding: 3.125rem 0;
                 margin: 0 auto;
                 position: relative;
                 input[type="text"] {
