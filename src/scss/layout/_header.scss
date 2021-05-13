@@ -6,7 +6,7 @@ header {
     left: 0;
     top: 0;
     background-color: $white-color;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, .4);
+    box-shadow: 0 3px 6px rgba(18, 18, 18, 0.36);
     .container {
         .logo {
             margin: 0;
@@ -23,6 +23,7 @@ header {
             }
         }
         .gnb {
+            position: relative;
             ul {
                 padding: 0;
                 font-size: 0;
@@ -32,14 +33,32 @@ header {
                 }
             }
             .categories {
-                display: none;
+                width: 320px;
+                height: 100vh;
+                padding: 26px 36px;
+                background-color: $secondary-color;
+                position: absolute;
+                top: 135%;
+                right: -21px;
+                box-sizing: border-box;
                 li {
-                    margin-left: 1.875rem;
-                    font-size: 0.875rem;
+                    display: block;
+                    font-size: 1.5rem;
                     color: $white-color;
                     a:hover {
                         color: $primary-color;
                     }
+                }
+                &::after {
+                    content: '';
+                    background-color: rgba(18, 18, 18, 0.36);
+                    position: fixed;
+                    top: 11.4%;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: -1;
+                    @include prefix(transition, all 0.5s, webkit moz o);
                 }
             }
             .iconMenu {
@@ -65,8 +84,22 @@ header {
                         height: 3px;
                         display: block;
                         background-color: #707070;
+                        @include prefix(transition, all 0.5s, webkit moz o);
                         &:nth-of-type(2) {
                             margin: 4px 0;
+                        }
+                    }
+                    &.on {
+                        span {
+                            &:nth-of-type(1) {
+                                @include prefix(transform, translateY(7px) rotate(-45deg), webkit moz ms o);
+                            }
+                            &:nth-of-type(2) {
+                                opacity: 0;
+                            }
+                            &:nth-of-type(3) {
+                                @include prefix(transform, translateY(-7px) rotate(45deg), webkit moz ms o);
+                            }
                         }
                     }
                 }
@@ -84,7 +117,7 @@ header {
             top: 100%;
             left: 0;
             overflow: hidden;
-            transition: all 0.5s;
+            @include prefix(transition, height 0.5s, webkit moz o);
             form {
                 width: 50%;
                 max-width: 32rem;

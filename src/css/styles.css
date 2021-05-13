@@ -299,7 +299,7 @@ header {
   left: 0;
   top: 0;
   background-color: #fff;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 3px 6px rgba(18, 18, 18, 0.36);
 }
 header .container .logo {
   margin: 0;
@@ -319,6 +319,9 @@ header .container .logo a {
   background: url(../images/logo_dark.png) no-repeat;
   background-size: cover;
 }
+header .container .gnb {
+  position: relative;
+}
 header .container .gnb ul {
   padding: 0;
   font-size: 0;
@@ -328,15 +331,36 @@ header .container .gnb ul li {
   line-height: 56px;
 }
 header .container .gnb .categories {
-  display: none;
+  width: 320px;
+  height: 100vh;
+  padding: 26px 36px;
+  background-color: #998675;
+  position: absolute;
+  top: 135%;
+  right: -21px;
+  box-sizing: border-box;
 }
 header .container .gnb .categories li {
-  margin-left: 1.875rem;
-  font-size: 0.875rem;
+  display: block;
+  font-size: 1.5rem;
   color: #fff;
 }
 header .container .gnb .categories li a:hover {
   color: #c7b299;
+}
+header .container .gnb .categories::after {
+  content: "";
+  background-color: rgba(18, 18, 18, 0.36);
+  position: fixed;
+  top: 11.4%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 header .container .gnb .iconMenu li {
   width: 21px;
@@ -361,9 +385,30 @@ header .container .gnb .iconMenu .toggleMenu span {
   height: 3px;
   display: block;
   background-color: #707070;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 header .container .gnb .iconMenu .toggleMenu span:nth-of-type(2) {
   margin: 4px 0;
+}
+header .container .gnb .iconMenu .toggleMenu.on span:nth-of-type(1) {
+  -webkit-transform: translateY(7px) rotate(-45deg);
+  -moz-transform: translateY(7px) rotate(-45deg);
+  -ms-transform: translateY(7px) rotate(-45deg);
+  -o-transform: translateY(7px) rotate(-45deg);
+  transform: translateY(7px) rotate(-45deg);
+}
+header .container .gnb .iconMenu .toggleMenu.on span:nth-of-type(2) {
+  opacity: 0;
+}
+header .container .gnb .iconMenu .toggleMenu.on span:nth-of-type(3) {
+  -webkit-transform: translateY(-7px) rotate(45deg);
+  -moz-transform: translateY(-7px) rotate(45deg);
+  -ms-transform: translateY(-7px) rotate(45deg);
+  -o-transform: translateY(-7px) rotate(45deg);
+  transform: translateY(-7px) rotate(45deg);
 }
 header .container .gnb .iconMenu .searchBtn {
   float: right;
@@ -377,7 +422,10 @@ header .container .searchForm {
   top: 100%;
   left: 0;
   overflow: hidden;
-  transition: all 0.5s;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -o-transition: height 0.5s;
+  transition: height 0.5s;
 }
 header .container .searchForm form {
   width: 50%;
