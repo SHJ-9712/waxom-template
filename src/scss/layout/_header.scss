@@ -33,14 +33,16 @@ header {
                 }
             }
             .categories {
+                display: none;
                 width: 320px;
                 height: 100vh;
                 padding: 26px 36px;
                 background-color: $secondary-color;
                 position: absolute;
                 top: 135%;
-                right: -21px;
+                right: -341px;
                 box-sizing: border-box;
+                @include prefix(transition, right 0.5s, webkit moz o);
                 li {
                     display: block;
                     font-size: 1.5rem;
@@ -48,17 +50,6 @@ header {
                     a:hover {
                         color: $primary-color;
                     }
-                }
-                &::after {
-                    content: '';
-                    background-color: rgba(18, 18, 18, 0.36);
-                    position: fixed;
-                    top: 11.4%;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    z-index: -1;
-                    @include prefix(transition, all 0.5s, webkit moz o);
                 }
             }
             .iconMenu {

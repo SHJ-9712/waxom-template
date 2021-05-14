@@ -331,14 +331,19 @@ header .container .gnb ul li {
   line-height: 56px;
 }
 header .container .gnb .categories {
+  display: none;
   width: 320px;
   height: 100vh;
   padding: 26px 36px;
   background-color: #998675;
   position: absolute;
   top: 135%;
-  right: -21px;
+  right: -341px;
   box-sizing: border-box;
+  -webkit-transition: right 0.5s;
+  -moz-transition: right 0.5s;
+  -o-transition: right 0.5s;
+  transition: right 0.5s;
 }
 header .container .gnb .categories li {
   display: block;
@@ -347,20 +352,6 @@ header .container .gnb .categories li {
 }
 header .container .gnb .categories li a:hover {
   color: #c7b299;
-}
-header .container .gnb .categories::after {
-  content: "";
-  background-color: rgba(18, 18, 18, 0.36);
-  position: fixed;
-  top: 11.4%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
 }
 header .container .gnb .iconMenu li {
   width: 21px;
