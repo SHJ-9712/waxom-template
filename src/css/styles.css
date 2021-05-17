@@ -179,64 +179,6 @@ template {
   display: none;
 }
 
-/* Montserrat */
-@font-face {
-  font-family: "Montserrat";
-  src: url("/src/font/Montserrat-Light.eot");
-  src: url("/src/font/Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("/src/font/Montserrat-Light.svg#Montserrat-Light") format("svg"), url("/src/font/Montserrat-Light.ttf") format("truetype"), url("/src/font/Montserrat-Light.woff") format("woff"), url("/src/font/Montserrat-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("/src/font/Montserrat-Regular.eot");
-  src: url("/src/font/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("/src/font/Montserrat-Regular.svg#Montserrat-Regular") format("svg"), url("/src/font/Montserrat-Regular.ttf") format("truetype"), url("/src/font/Montserrat-Regular.woff") format("woff"), url("/src/font/Montserrat-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("/src/font/Montserrat-Bold.eot");
-  src: url("/src/font/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("/src/font/Montserrat-Bold.svg#Montserrat-Bold") format("svg"), url("/src/font/Montserrat-Bold.ttf") format("truetype"), url("/src/font/Montserrat-Bold.woff") format("woff"), url("/src/font/Montserrat-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-/* Raleway */
-@font-face {
-  font-family: "Raleway";
-  src: url("/src/font/Raleway-Light.eot");
-  src: url("/src/font/Raleway-Light.eot?#iefix") format("embedded-opentype"), url("/src/font/Raleway-Light.svg#Raleway-Light") format("svg"), url("/src/font/Raleway-Light.ttf") format("truetype"), url("/src/font/Raleway-Light.woff") format("woff"), url("/src/font/Raleway-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Raleway";
-  src: url("/src/font/Raleway-Regular.eot");
-  src: url("/src/font/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("/src/font/Raleway-Regular.svg#Raleway-Regular") format("svg"), url("/src/font/Raleway-Regular.ttf") format("truetype"), url("/src/font/Raleway-Regular.woff") format("woff"), url("/src/font/Raleway-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Raleway";
-  src: url("/src/font/Raleway-Medium.eot");
-  src: url("/src/font/Raleway-Medium.eot?#iefix") format("embedded-opentype"), url("/src/font/Raleway-Medium.svg#Raleway-Medium") format("svg"), url("/src/font/Raleway-Medium.ttf") format("truetype"), url("/src/font/Raleway-Medium.woff") format("woff"), url("/src/font/Raleway-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Raleway";
-  src: url("/src/font/Raleway-Bold.eot");
-  src: url("/src/font/Raleway-Bold.eot?#iefix") format("embedded-opentype"), url("/src/font/Raleway-Bold.svg#Raleway-Bold") format("svg"), url("/src/font/Raleway-Bold.ttf") format("truetype"), url("/src/font/Raleway-Bold.woff") format("woff"), url("/src/font/Raleway-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Raleway";
-  src: url("/src/font/Raleway-ExtraBold.eot");
-  src: url("/src/font/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("/src/font/Raleway-ExtraBold.svg#Raleway-ExtraBold") format("svg"), url("/src/font/Raleway-ExtraBold.ttf") format("truetype"), url("/src/font/Raleway-ExtraBold.woff") format("woff"), url("/src/font/Raleway-ExtraBold.woff2") format("woff2");
-  font-weight: 800;
-  font-style: normal;
-}
 body {
   font-family: Montserrat;
   font-weight: 300;
