@@ -7,6 +7,7 @@ header {
     top: 0;
     background-color: $white-color;
     box-shadow: 0 3px 6px rgba(18, 18, 18, 0.36);
+    z-index: 9999;
     .container {
         .logo {
             margin: 0;
@@ -18,8 +19,7 @@ header {
                 width: 182px;
                 height: 56px;
                 display: block;
-                background: url(../images/logo_dark.png) no-repeat;
-                background-size: cover;
+                background: url(../images/mobile_logo.png) no-repeat center;
             }
         }
         .gnb {

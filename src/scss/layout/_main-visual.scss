@@ -1,0 +1,51 @@
+@charset "utf-8";
+.main-visual {
+    height: 100vh;
+    .swiper-wrapper {
+        margin-top: 96px;
+        position: relative;
+        .swiper-slide {
+            background-repeat: no-repeat;
+            background-size: cover;
+            .slogan {
+                width: 100%;
+                text-align: center;
+                color: #fff;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                strong {
+                    font-size: 20px;
+                    @extend %raleway-medium;
+                    letter-spacing: 1px;
+                }
+                h3 {
+                    margin: 0;
+                    padding: 10px 0;
+                    font-size: 38px;
+                    @extend %raleway-extraBold;
+                }
+                p {
+                    max-width: 600px;
+                    margin: 0 auto;
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+                .link-btn {
+                    margin-top: 49px;
+                    @extend %link-btn;
+                }
+            }
+        }
+        .slide1 {
+            background-image: url(../images/mainslide_01.jpg);
+        }
+        .slide2 {
+            background-image: url(../images/mainslide_02.jpg);
+        }
+        .slide3 {
+            background-image: url(../images/mainslide_03.jpg);
+        }
+    }
+}

@@ -44,3 +44,22 @@ toggleMenu.addEventListener('click', function() {
         toggleMenu.classList.add('on');
     }
 });
+
+// main swiper
+var swiper = new Swiper('.main-visual', {
+    spaceBetween: 0,
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});

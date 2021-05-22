@@ -184,6 +184,41 @@ body {
   font-weight: 300;
 }
 
+.main-visual .swiper-wrapper .swiper-slide .slogan strong {
+  font-family: Raleway;
+  font-weight: 500;
+}
+
+.main-visual .swiper-wrapper .swiper-slide .slogan .link-btn {
+  font-family: Raleway;
+  font-weight: 700;
+}
+
+.main-visual .swiper-wrapper .swiper-slide .slogan h3 {
+  font-family: Raleway;
+  font-weight: 800;
+}
+
+.main-visual .swiper-wrapper .swiper-slide .slogan .link-btn {
+  padding: 18px 38px;
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #998675;
+  border-radius: 4px;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.14);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.main-visual .swiper-wrapper .swiper-slide .slogan .link-btn:hover {
+  color: #555;
+  box-shadow: inset 0 -52px 0 #fff;
+}
+
 body {
   font-size: 16px;
   color: #555;
@@ -242,6 +277,7 @@ header {
   top: 0;
   background-color: #fff;
   box-shadow: 0 3px 6px rgba(18, 18, 18, 0.36);
+  z-index: 9999;
 }
 header .container .logo {
   margin: 0;
@@ -258,8 +294,7 @@ header .container .logo a {
   width: 182px;
   height: 56px;
   display: block;
-  background: url(../images/logo_dark.png) no-repeat;
-  background-size: cover;
+  background: url(../images/mobile_logo.png) no-repeat center;
 }
 header .container .gnb {
   position: relative;
@@ -391,6 +426,54 @@ header .container .searchForm form button[type=submit] {
 }
 header .container .searchForm form button[type=submit] svg {
   fill: #fff;
+}
+
+.main-visual {
+  height: 100vh;
+}
+.main-visual .swiper-wrapper {
+  margin-top: 96px;
+  position: relative;
+}
+.main-visual .swiper-wrapper .swiper-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-visual .swiper-wrapper .swiper-slide .slogan {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-visual .swiper-wrapper .swiper-slide .slogan strong {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.main-visual .swiper-wrapper .swiper-slide .slogan h3 {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 38px;
+}
+.main-visual .swiper-wrapper .swiper-slide .slogan p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 16px;
+}
+.main-visual .swiper-wrapper .swiper-slide .slogan .link-btn {
+  margin-top: 49px;
+}
+.main-visual .swiper-wrapper .slide1 {
+  background-image: url(../images/mainslide_01.jpg);
+}
+.main-visual .swiper-wrapper .slide2 {
+  background-image: url(../images/mainslide_02.jpg);
+}
+.main-visual .swiper-wrapper .slide3 {
+  background-image: url(../images/mainslide_03.jpg);
 }
 
 /*# sourceMappingURL=styles.css.map */
