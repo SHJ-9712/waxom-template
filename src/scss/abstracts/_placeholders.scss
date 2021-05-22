@@ -34,3 +34,21 @@
     font-family: Raleway;
     font-weight: 800;
 }
+// brwon link button
+%link-btn {
+    padding: 18px 38px;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    @extend %raleway-bold;
+    color: $white-color;
+    background-color: $secondary-color;
+    border-radius: 4px;
+    box-shadow: inset 0 -3px 0 rgb(0 0 0 / 14%);
+    @include prefix(transition, all 0.5s, webkit moz o);
+    &:hover {
+        color: $default-color;
+        box-shadow: inset 0 -52px 0 $white-color;
+    }
+}
