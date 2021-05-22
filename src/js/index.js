@@ -58,8 +58,12 @@ var swiper = new Swiper('.main-visual', {
         el: '.swiper-pagination',
         clickable: true,
     },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+    breakpoints: {
+        1140: {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }            
+        }
+    }
 });

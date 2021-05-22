@@ -48,4 +48,34 @@
             background-image: url(../images/mainslide_03.jpg);
         }
     }
+    .swiper-pagination {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        @include prefix(transform, translateX(-50%), webkit moz ms o);
+        z-index: 100;
+        .swiper-pagination-bullet {
+            width: 15px;
+            height: 15px;
+            margin: 0 4px;
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            cursor: pointer;
+            @include prefix(transition, all 0.5s, webkit moz o);
+            &.swiper-pagination-bullet-active {
+                background-color: transparent;
+                box-shadow: 0 0 0 2px $white-color;
+                &:after {
+                    content: '';
+                    width: 15px;
+                    height: 15px;
+                    display: block;
+                    border-radius: 50%;
+                    background-color: $white-color;
+                    @include prefix(transform, scale(0.4), webkit moz ms o);
+                }
+            }
+        }
+    }
 }

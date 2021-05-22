@@ -245,7 +245,7 @@ button {
 }
 @media screen and (min-width: 64rem) {
   .container {
-    max-width: 73.125rem;
+    max-width: 71.25rem;
     margin: 0 auto;
   }
 }
@@ -474,6 +474,51 @@ header .container .searchForm form button[type=submit] svg {
 }
 .main-visual .swiper-wrapper .slide3 {
   background-image: url(../images/mainslide_03.jpg);
+}
+.main-visual .swiper-pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 100;
+}
+.main-visual .swiper-pagination .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  margin: 0 4px;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.main-visual .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: transparent;
+  box-shadow: 0 0 0 2px #fff;
+}
+.main-visual .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: block;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-transform: scale(0.4);
+  -moz-transform: scale(0.4);
+  -ms-transform: scale(0.4);
+  -o-transform: scale(0.4);
+  transform: scale(0.4);
+}
+
+.services {
+  margin-top: 60px;
 }
 
 /*# sourceMappingURL=styles.css.map */
