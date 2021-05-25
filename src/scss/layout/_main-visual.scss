@@ -76,6 +76,20 @@
                     @include prefix(transform, scale(0.4), webkit moz ms o);
                 }
             }
+            &:hover {
+                background-color: transparent;
+                box-shadow: 0 0 0 2px $white-color;
+                &:after {
+                    content: '';
+                    width: 15px;
+                    height: 15px;
+                    display: block;
+                    border-radius: 50%;
+                    background-color: $white-color;
+                    @include prefix(transform, scale(0.4), webkit moz ms o);
+                }
+                
+            }
         }
     }
 }

@@ -516,6 +516,23 @@ header .container .searchForm form button[type=submit] svg {
   -o-transform: scale(0.4);
   transform: scale(0.4);
 }
+.main-visual .swiper-pagination .swiper-pagination-bullet:hover {
+  background-color: transparent;
+  box-shadow: 0 0 0 2px #fff;
+}
+.main-visual .swiper-pagination .swiper-pagination-bullet:hover:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: block;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-transform: scale(0.4);
+  -moz-transform: scale(0.4);
+  -ms-transform: scale(0.4);
+  -o-transform: scale(0.4);
+  transform: scale(0.4);
+}
 
 .services {
   margin-top: 60px;
