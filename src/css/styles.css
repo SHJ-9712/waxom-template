@@ -184,7 +184,7 @@ body {
   font-weight: 300;
 }
 
-.main-visual .swiper-wrapper .swiper-slide .slogan strong {
+.services ul li .txt-box h3, .main-visual .swiper-wrapper .swiper-slide .slogan strong {
   font-family: Raleway;
   font-weight: 500;
 }
@@ -226,10 +226,13 @@ body {
 
 ol,
 ul {
+  padding: 0;
   list-style: none;
+  font-size: 0;
 }
 
 a {
+  display: block;
   text-decoration: none;
   color: inherit;
 }
@@ -536,6 +539,40 @@ header .container .searchForm form button[type=submit] svg {
 
 .services {
   margin-top: 60px;
+}
+.services ul {
+  text-align: center;
+}
+.services ul li svg {
+  width: 44px;
+  height: 44px;
+  color: #8c8c8c;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.services ul li .txt-box h3 {
+  margin: 25px 0 15px;
+  font-size: 22px;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.services ul li .txt-box p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+.services ul li:hover svg {
+  color: #c7b299;
+}
+.services ul li:hover .txt-box h3 {
+  color: #c7b299;
+}
+.services ul li:not(:last-of-type) {
+  margin-bottom: 35px;
 }
 
 /*# sourceMappingURL=styles.css.map */

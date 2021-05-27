@@ -1,0 +1,41 @@
+@charset "utf-8";
+.services {
+    margin-top: 60px;
+    ul {
+        text-align: center;
+        li {
+            svg {
+                width: 44px;
+                height: 44px;
+                color: $sub-color;
+                @include prefix(transition, color 0.3s, webkit moz o);
+            }
+            .txt-box {
+                h3 {
+                    margin: 25px 0 15px;
+                    font-size: 22px;
+                    @extend %raleway-medium;
+                    @include prefix(transition, color 0.3s, webkit moz o);
+                }
+                p {
+                    margin: 0;
+                    font-size: 15px;
+                    line-height: 1.5em;
+                }
+            }
+            &:hover {
+                svg {
+                    color: $primary-color;
+                }
+                .txt-box {
+                    h3 {
+                        color: $primary-color;
+                    }
+                }
+            }
+            &:not(:last-of-type) {
+                margin-bottom: 35px;
+            }
+        }
+    }
+}

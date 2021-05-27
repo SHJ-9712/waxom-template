@@ -47,6 +47,7 @@ toggleMenu.addEventListener('click', function() {
 
 // main swiper
 var swiper = new Swiper('.main-visual', {
+    slidesPerView: 1,
     spaceBetween: 0,
     centeredSlides: true,
     loop: true,
