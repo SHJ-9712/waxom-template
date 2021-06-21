@@ -184,7 +184,7 @@ body {
   font-weight: 300;
 }
 
-.services ul li .txt-box h3, .main-visual .swiper-wrapper .swiper-slide .slogan strong {
+.introduce .info strong, .services ul li .txt-box h3, .main-visual .swiper-wrapper .swiper-slide .slogan strong {
   font-family: Raleway;
   font-weight: 500;
 }
@@ -573,6 +573,31 @@ header .container .searchForm form button[type=submit] svg {
 }
 .services ul li:not(:last-of-type) {
   margin-bottom: 35px;
+}
+
+.introduce {
+  margin-top: 60px;
+  padding-top: 90px;
+  background-color: #fbfaf8;
+}
+.introduce .info {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.introduce .info strong {
+  font-size: 30px;
+  color: #363636;
+}
+.introduce .info p {
+  max-width: 560px;
+  margin: 20px 0 0 0;
+  font-weight: 500;
+  line-height: 1.6em;
+  color: #8c8c8c;
+}
+.introduce img {
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

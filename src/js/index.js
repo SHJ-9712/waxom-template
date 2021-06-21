@@ -4,7 +4,7 @@ const desktopMq = window.matchMedia("screen and (min-width: 64rem)").matches;
 const searchBtn = document.querySelector('header .searchBtn');
 const searchForm = document.querySelector('header .searchForm');
 const searchInput = document.querySelector('header .searchForm form');
-searchBtn.addEventListener('click', function() {
+searchBtn.addEventListener('click', () => {
     if(searchForm.style.height == '147px') {
         searchForm.style.height = '0';
         setTimeout(() => {
@@ -18,7 +18,7 @@ searchBtn.addEventListener('click', function() {
     }
 });
 if(desktopMq) {
-    searchForm.addEventListener('mouseleave', function() {
+    searchForm.addEventListener('mouseleave', () => {
         searchForm.style.height = '0';
         setTimeout(() => {
             searchForm.style.display = 'none';
@@ -29,7 +29,7 @@ if(desktopMq) {
 // header Mobile, Tablet toggle menu
 const toggleMenu = document.querySelector('.toggleMenu');
 const categories = document.querySelector('.categories');
-toggleMenu.addEventListener('click', function() {
+toggleMenu.addEventListener('click', () => {
     if(categories.style.display == 'block') {
         categories.style.right = '-341px';
         setTimeout(() => {
