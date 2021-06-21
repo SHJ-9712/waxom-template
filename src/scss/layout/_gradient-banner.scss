@@ -1,0 +1,26 @@
+@charset "utf-8";
+.gradient-banner {
+    padding: 40px 0;
+    background-color: #2f2928;
+    .info {
+        text-align: center;
+        strong {
+            font-size: 30px;
+            line-height: 1.2em;
+            @extend %raleway-regular;
+            color: $white-color;
+            span {
+                font-weight: 600;
+                color: $primary-color;
+            }
+        }
+        p {
+            font-size: 21px;
+            line-height: 1.7em;
+            color: $sub-color;
+        }
+        .link-btn {
+            @extend %link-btn;
+        }
+    }
+}

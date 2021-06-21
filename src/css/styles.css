@@ -184,12 +184,17 @@ body {
   font-weight: 300;
 }
 
+.gradient-banner .info strong {
+  font-family: Raleway;
+  font-weight: 400;
+}
+
 .introduce .info strong, .services ul li .txt-box h3, .main-visual .swiper-wrapper .swiper-slide .slogan strong {
   font-family: Raleway;
   font-weight: 500;
 }
 
-.main-visual .swiper-wrapper .swiper-slide .slogan .link-btn {
+.gradient-banner .info .link-btn, .main-visual .swiper-wrapper .swiper-slide .slogan .link-btn {
   font-family: Raleway;
   font-weight: 700;
 }
@@ -199,7 +204,7 @@ body {
   font-weight: 800;
 }
 
-.main-visual .swiper-wrapper .swiper-slide .slogan .link-btn {
+.gradient-banner .info .link-btn, .main-visual .swiper-wrapper .swiper-slide .slogan .link-btn {
   padding: 18px 38px;
   display: inline-block;
   font-size: 14px;
@@ -214,7 +219,7 @@ body {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-.main-visual .swiper-wrapper .swiper-slide .slogan .link-btn:hover {
+.gradient-banner .info .link-btn:hover, .main-visual .swiper-wrapper .swiper-slide .slogan .link-btn:hover {
   color: #555;
   box-shadow: inset 0 -52px 0 #fff;
 }
@@ -598,6 +603,29 @@ header .container .searchForm form button[type=submit] svg {
 .introduce img {
   width: 100%;
   height: auto;
+  vertical-align: top;
+}
+
+.gradient-banner {
+  padding: 40px 0;
+  background-color: #2f2928;
+}
+.gradient-banner .info {
+  text-align: center;
+}
+.gradient-banner .info strong {
+  font-size: 30px;
+  line-height: 1.2em;
+  color: #fff;
+}
+.gradient-banner .info strong span {
+  font-weight: 600;
+  color: #c7b299;
+}
+.gradient-banner .info p {
+  font-size: 21px;
+  line-height: 1.7em;
+  color: #8c8c8c;
 }
 
 /*# sourceMappingURL=styles.css.map */
