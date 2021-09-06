@@ -3,21 +3,8 @@
     margin-top: 60px;
     padding-top: 90px;
     background-color: #fbfaf8;
-    .info {
-        text-align: center;
-        margin-bottom: 35px;
-        strong {
-            font-size: 30px;
-            color: #363636;
-            @extend %raleway-medium;
-        }
-        p {
-            max-width: 560px;
-            margin: 20px 0 0 0;
-            font-weight: 500;
-            line-height: 1.6em;
-            color: $sub-color;
-        }
+    .title {
+        @extend %title;
     }
     img {
         width: 100%;

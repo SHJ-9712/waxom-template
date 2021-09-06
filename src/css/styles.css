@@ -189,12 +189,12 @@ body {
   font-weight: 400;
 }
 
-.introduce .info strong, .services ul li .txt-box h3, .main-visual .swiper-wrapper .swiper-slide .slogan strong {
+.latest-projects .projects-wrap .projects-list .project-item .item-info h3 a, .services ul li .txt-box h3, .main-visual .swiper-wrapper .swiper-slide .slogan strong, .latest-projects .title strong, .introduce .title strong {
   font-family: Raleway;
   font-weight: 500;
 }
 
-.gradient-banner .info .link-btn, .main-visual .swiper-wrapper .swiper-slide .slogan .link-btn {
+.latest-projects .projects-wrap .project-load-btn button[type=button], .gradient-banner .info .link-btn, .main-visual .swiper-wrapper .swiper-slide .slogan .link-btn {
   font-family: Raleway;
   font-weight: 700;
 }
@@ -204,7 +204,7 @@ body {
   font-weight: 800;
 }
 
-.gradient-banner .info .link-btn, .main-visual .swiper-wrapper .swiper-slide .slogan .link-btn {
+.latest-projects .projects-wrap .project-load-btn button[type=button], .gradient-banner .info .link-btn, .main-visual .swiper-wrapper .swiper-slide .slogan .link-btn {
   padding: 18px 38px;
   display: inline-block;
   font-size: 14px;
@@ -219,9 +219,25 @@ body {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-.gradient-banner .info .link-btn:hover, .main-visual .swiper-wrapper .swiper-slide .slogan .link-btn:hover {
+.latest-projects .projects-wrap .project-load-btn button[type=button]:hover, .gradient-banner .info .link-btn:hover, .main-visual .swiper-wrapper .swiper-slide .slogan .link-btn:hover {
   color: #555;
   box-shadow: inset 0 -52px 0 #fff;
+}
+
+.latest-projects .title, .introduce .title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.latest-projects .title strong, .introduce .title strong {
+  font-size: 30px;
+  color: #363636;
+}
+.latest-projects .title p, .introduce .title p {
+  max-width: 560px;
+  margin: 20px auto 0;
+  font-weight: 500;
+  line-height: 1.6em;
+  color: #8c8c8c;
 }
 
 body {
@@ -585,21 +601,6 @@ header .container .searchForm form button[type=submit] svg {
   padding-top: 90px;
   background-color: #fbfaf8;
 }
-.introduce .info {
-  text-align: center;
-  margin-bottom: 35px;
-}
-.introduce .info strong {
-  font-size: 30px;
-  color: #363636;
-}
-.introduce .info p {
-  max-width: 560px;
-  margin: 20px 0 0 0;
-  font-weight: 500;
-  line-height: 1.6em;
-  color: #8c8c8c;
-}
 .introduce img {
   width: 100%;
   height: auto;
@@ -626,6 +627,193 @@ header .container .searchForm form button[type=submit] svg {
   font-size: 21px;
   line-height: 1.7em;
   color: #8c8c8c;
+}
+.latest-projects {
+  padding-top: 70px;
+}
+.latest-projects .projects-wrap .filters {
+  text-align: center;
+  -ms-display: grid;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+.latest-projects .projects-wrap .filters li {
+  border: 1px solid #ebebeb;
+  border-radius: 2px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.latest-projects .projects-wrap .filters li button[type=button] {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 14px;
+  line-height: 14px;
+  color: #8c8c8c;
+}
+.latest-projects .projects-wrap .filters li.active {
+  background-color: #998675;
+  border-color: #998675;
+}
+.latest-projects .projects-wrap .filters li.active button[type=button] {
+  color: #fff;
+}
+.latest-projects .projects-wrap .filters li:hover {
+  background-color: #998675;
+  border-color: #998675;
+}
+.latest-projects .projects-wrap .filters li:hover button[type=button] {
+  color: #fff;
+}
+.latest-projects .projects-wrap .projects-list {
+  margin-top: 35px;
+}
+.latest-projects .projects-wrap .projects-list .project-item {
+  width: 250px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.latest-projects .projects-wrap .projects-list .project-item .item-banner {
+  background-color: #111;
+  position: relative;
+}
+.latest-projects .projects-wrap .projects-list .project-item .item-banner a {
+  font-size: 0;
+}
+.latest-projects .projects-wrap .projects-list .project-item .item-banner a img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: transform 0.3s, opacity 0.3s;
+  -moz-transition: transform 0.3s, opacity 0.3s;
+  -o-transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.latest-projects .projects-wrap .projects-list .project-item .item-banner a .item-overlay {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.latest-projects .projects-wrap .projects-list .project-item .item-banner a .item-overlay button[type=button] {
+  width: 26px;
+  height: 26px;
+  margin: 0 16px;
+  padding: 0;
+}
+.latest-projects .projects-wrap .projects-list .project-item .item-banner a .item-overlay button[type=button] svg path {
+  fill: #fff;
+  -webkit-transition: fill 0.3s;
+  -moz-transition: fill 0.3s;
+  -o-transition: fill 0.3s;
+  transition: fill 0.3s;
+}
+.latest-projects .projects-wrap .projects-list .project-item .item-banner a .item-overlay button[type=button]:hover svg path {
+  fill: #c7b299;
+}
+.latest-projects .projects-wrap .projects-list .project-item .item-info {
+  padding: 20px 24px;
+  background-color: #fbfaf8;
+  position: relative;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.latest-projects .projects-wrap .projects-list .project-item .item-info h3 {
+  margin: 0 0 7px 0;
+}
+.latest-projects .projects-wrap .projects-list .project-item .item-info h3 a {
+  display: inline-block;
+  font-size: 18px;
+  color: #363636;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.latest-projects .projects-wrap .projects-list .project-item .item-info > span {
+  font-size: 14px;
+  letter-spacing: -0.6px;
+  color: #aaa;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.latest-projects .projects-wrap .projects-list .project-item .item-info .like-btn {
+  width: 24px;
+  padding: 0;
+  position: absolute;
+  top: 16px;
+  right: 24px;
+}
+.latest-projects .projects-wrap .projects-list .project-item .item-info .like-btn svg {
+  width: 20px;
+  height: 20px;
+  margin: 0 0 5px 2px;
+  display: block;
+}
+.latest-projects .projects-wrap .projects-list .project-item .item-info .like-btn svg path {
+  fill: #c7b299;
+}
+.latest-projects .projects-wrap .projects-list .project-item .item-info .like-btn span {
+  font-size: 14px;
+  color: #aaa;
+}
+.latest-projects .projects-wrap .projects-list .project-item .item-info::before {
+  content: "";
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-bottom: 11px solid #fbfaf8;
+  position: absolute;
+  top: -11px;
+  left: 24px;
+  -webkit-transition: border-bottom-color 0.3s;
+  -moz-transition: border-bottom-color 0.3s;
+  -o-transition: border-bottom-color 0.3s;
+  transition: border-bottom-color 0.3s;
+}
+.latest-projects .projects-wrap .projects-list .project-item:hover .item-banner a img {
+  opacity: 0.4;
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.15);
+}
+.latest-projects .projects-wrap .projects-list .project-item:hover .item-banner .item-overlay {
+  opacity: 1;
+}
+.latest-projects .projects-wrap .projects-list .project-item:hover .item-info {
+  background-color: #2f2928;
+}
+.latest-projects .projects-wrap .projects-list .project-item:hover .item-info h3 a {
+  color: #fff;
+}
+.latest-projects .projects-wrap .projects-list .project-item:hover .item-info > span {
+  color: #c7b299;
+}
+.latest-projects .projects-wrap .projects-list .project-item:hover .item-info::before {
+  border-bottom-color: #2f2928;
+}
+.latest-projects .projects-wrap .projects-list .more-project {
+  display: none;
+}
+.latest-projects .projects-wrap .project-load-btn {
+  margin-top: 55px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -34,6 +34,23 @@
     font-family: Raleway;
     font-weight: 800;
 }
+
+// flex 정렬
+%flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+%justify {
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
 // brwon link button
 %link-btn {
     padding: 18px 38px;
@@ -50,5 +67,23 @@
     &:hover {
         color: $default-color;
         box-shadow: inset 0 -52px 0 $white-color;
+    }
+}
+
+// section title
+%title {
+    text-align: center;
+    margin-bottom: 35px;
+    strong {
+        font-size: 30px;
+        color: #363636;
+        @extend %raleway-medium;
+    }
+    p {
+        max-width: 560px;
+        margin: 20px auto 0;
+        font-weight: 500;
+        line-height: 1.6em;
+        color: $sub-color;
     }
 }
