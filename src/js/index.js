@@ -68,3 +68,21 @@ var swiper = new Swiper('.main-visual', {
         }
     }
 });
+
+const playBtn = document.querySelector('.video-section .youtube-play-btn');
+const videoModal = document.querySelector('.video-modal');
+const closeBtn = document.querySelector('.video-modal .modal-container .modal-box .close-btn');
+
+function showVideo(e) {
+    e.preventDefault();
+    videoModal.style.setProperty('display', 'block');
+    document.querySelector('body').style.setProperty('overflow', 'hidden');
+}
+function closeVideo() {
+    videoModal.style.setProperty('display', 'none');
+    document.querySelector('body').style.removeProperty('overflow');
+}
+
+playBtn.addEventListener('click', showVideo);
+videoModal.addEventListener('click', closeVideo);
+closeBtn.addEventListener('click', closeVideo);
