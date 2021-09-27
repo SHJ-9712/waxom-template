@@ -69,6 +69,7 @@ var swiper = new Swiper('.main-visual', {
     }
 });
 
+// video modal
 const playBtn = document.querySelector('.video-section .youtube-play-btn');
 const videoModal = document.querySelector('.video-modal');
 const closeBtn = document.querySelector('.video-modal .modal-container .modal-box .close-btn');
@@ -78,11 +79,28 @@ function showVideo(e) {
     videoModal.style.setProperty('display', 'block');
     document.querySelector('body').style.setProperty('overflow', 'hidden');
 }
-function closeVideo() {
+function hideVideo() {
     videoModal.style.setProperty('display', 'none');
     document.querySelector('body').style.removeProperty('overflow');
+    stopVideo();
 }
 
 playBtn.addEventListener('click', showVideo);
-videoModal.addEventListener('click', closeVideo);
-closeBtn.addEventListener('click', closeVideo);
+videoModal.addEventListener('click', hideVideo);
+closeBtn.addEventListener('click', hideVideo);
+
+// video modal_youtube api
+const addYouTubeAPI = document.createElement('script');
+addYouTubeAPI.src = 'https://www.youtube.com/iframe_api';
+videoModal.appendChild(addYouTubeAPI);
+
+let player;
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+        videoId: 'ZTwCDpFJEZ4'
+    });
+}
+
+function stopVideo() {
+    player.stopVideo();
+}
