@@ -1,0 +1,33 @@
+@charset "utf-8";
+.counter-banner {
+    padding: 50px 0;
+    background-color: #2f2928;
+    .icon-box {
+        padding: 0 15px;
+        text-align: center;
+        &:not(:last-child) {margin-bottom: 55px;}
+        svg {
+            width: 34.78%;
+            path {fill: $white-color;}
+        }
+        .counter-number {
+            display: block;
+            font-size: 62px;
+            @extend %montserrat-bold;
+            color: $white-color;
+        }
+        .icon-title {
+            margin: 0;
+            @extend %raleway-bold;
+            color: $primary-color;
+        }
+        &::after {
+            content: '';
+            width: 30px;
+            height: 2px;
+            margin: 25px auto 0;
+            display: block;
+            background-color: $white-color;
+        }
+    }
+}

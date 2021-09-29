@@ -189,6 +189,11 @@ body {
   font-weight: 400;
 }
 
+.counter-banner .icon-box .counter-number {
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
 .gradient-banner .info strong {
   font-family: Raleway;
   font-weight: 400;
@@ -199,7 +204,7 @@ body {
   font-weight: 500;
 }
 
-.latest-projects .projects-wrap .project-load-btn button[type=button], .gradient-banner .info .link-btn, .main-visual .swiper-wrapper .swiper-slide .slogan .link-btn {
+.counter-banner .icon-box .icon-title, .latest-projects .projects-wrap .project-load-btn button[type=button], .gradient-banner .info .link-btn, .main-visual .swiper-wrapper .swiper-slide .slogan .link-btn {
   font-family: Raleway;
   font-weight: 700;
 }
@@ -927,6 +932,7 @@ header .container .searchForm form button[type=submit] svg {
   line-height: 1.66em;
 }
 .excellent-mobile .moblie-device-info .info-box ul {
+  margin-bottom: 35px;
   padding-left: 45px;
 }
 .excellent-mobile .moblie-device-info .info-box ul li {
@@ -946,6 +952,41 @@ header .container .searchForm form button[type=submit] svg {
 }
 .excellent-mobile .moblie-device-info .info-box ul li:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.counter-banner {
+  padding: 50px 0;
+  background-color: #2f2928;
+}
+.counter-banner .icon-box {
+  padding: 0 15px;
+  text-align: center;
+}
+.counter-banner .icon-box:not(:last-child) {
+  margin-bottom: 55px;
+}
+.counter-banner .icon-box svg {
+  width: 34.78%;
+}
+.counter-banner .icon-box svg path {
+  fill: #fff;
+}
+.counter-banner .icon-box .counter-number {
+  display: block;
+  font-size: 62px;
+  color: #fff;
+}
+.counter-banner .icon-box .icon-title {
+  margin: 0;
+  color: #c7b299;
+}
+.counter-banner .icon-box::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  margin: 25px auto 0;
+  display: block;
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */
