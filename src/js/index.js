@@ -104,3 +104,21 @@ function onYouTubeIframeAPIReady() {
 function stopVideo() {
     player.stopVideo();
 }
+
+// recent posts swiper
+var swiper = new Swiper(".posts-swiper", {
+    slidesPerView : 1,
+    loop : true,
+    loopAdditionalSlides: 1,
+    centeredSlides: true,
+    spaceBetween : 30,
+    freeMode: false,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
