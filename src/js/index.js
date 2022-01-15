@@ -122,3 +122,16 @@ var swiper = new Swiper(".posts-swiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+// partners swiper
+var swiper = new Swiper(".partners-swiper", {
+    slidesPerView : 1,
+    loop : true,
+    loopAdditionalSlides: 1,
+    centeredSlides: true,
+    freeMode: false,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+});

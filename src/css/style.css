@@ -1143,15 +1143,7 @@ header .container .searchForm form button[type=submit] svg {
 
 .partners {
   padding: 110px 0;
-  background: url(../images/partners_bg.jpg) no-repeat center top;
-  background-size: cover;
-}
-.partners .partners-swiper {
-  overflow: hidden;
-}
-.partners .partners-swiper .swiper-wrapper {
-  text-align: center;
-  align-items: center;
+  background: url(../images/partners_bg.jpg) no-repeat 0 0;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style.css.map */

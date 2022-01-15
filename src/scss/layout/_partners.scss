@@ -1,0 +1,13 @@
+@charset "utf-8";
+.partners {
+    padding: 110px 0;
+    background: url(../images/partners_bg.jpg) no-repeat center top;
+    background-size: cover;
+    .partners-swiper {
+        overflow: hidden;
+        .swiper-wrapper {
+            text-align: center;
+            align-items: center;
+        }
+    }
+}
