@@ -1158,5 +1158,74 @@ footer {
   padding-top: 50px;
   background-color: #191919;
 }
+footer .footer-info {
+  padding: 35px 14px 0;
+}
+footer .footer-info .box {
+  margin-bottom: 20px;
+}
+footer .footer-info .box:last-child {
+  margin-bottom: 0;
+}
+footer .footer-info .box p {
+  margin: 0 0 25px 0;
+  font-size: 14px;
+  line-height: 1.7em;
+  color: #666;
+}
+footer .footer-info .box p:last-of-type {
+  margin: 0;
+}
+footer .footer-info .box p img {
+  width: 68%;
+}
+footer .footer-info .box strong {
+  margin-bottom: 20px;
+  display: block;
+  font-size: 19px;
+  color: #fff;
+}
+footer .footer-info .box ul li:not(:last-child) {
+  border-bottom: 1px solid #232323;
+}
+footer .footer-info .box ul li a {
+  padding: 10px 10px 10px 0;
+}
+footer .footer-info .box ul li div {
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.7em;
+  color: #8c8c8c;
+}
+footer .footer-info .box ul li p {
+  font-size: 12px;
+}
+footer .footer-info .contact-info ul {
+  position: relative;
+}
+footer .footer-info .contact-info ul::before {
+  content: "";
+  background: url(../images/contact-details-map.png) no-repeat center center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.11;
+}
+footer .footer-info .contact-info ul li {
+  position: relative;
+}
+footer .footer-info .contact-info ul li svg {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 13px;
+  left: 0;
+}
+footer .footer-info .contact-info ul li div {
+  padding: 10px 10px 10px 30px;
+  color: #636363;
+}
 
 /*# sourceMappingURL=styles.css.map */

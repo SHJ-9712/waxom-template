@@ -2,4 +2,71 @@
 footer {
     padding-top: 50px;
     background-color: #191919;
+    .footer-info {
+        padding: 35px 14px 0;
+        .box {
+            margin-bottom: 20px;
+            &:last-child {margin-bottom: 0;}
+            p {
+                margin: 0 0 25px 0;
+                font-size: 14px;
+                line-height: 1.7em;
+                color: #666;
+                &:last-of-type {margin: 0;}
+                img {
+                    width: 68%;
+                }
+            }
+            strong {
+                margin-bottom: 20px;
+                display: block;
+                font-size: 19px;
+                color: $white-color;
+            }
+            ul {
+                li {
+                    &:not(:last-child) {border-bottom: 1px solid #232323;}
+                    a {padding: 10px 10px 10px 0;}
+                    div {
+                        margin-bottom: 8px;
+                        font-size: 14px;
+                        line-height: 1.7em;
+                        color: $sub-color;
+                    }
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .contact-info {
+            ul {
+                position: relative;
+                &::before {
+                    content: '';
+                    background: url(../images/contact-details-map.png) no-repeat center center;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    opacity: 0.11;
+                }
+                li {
+                    position: relative;
+                    svg {
+                        width: 18px;
+                        height: 18px;
+                        position: absolute;
+                        top: 13px;
+                        left: 0;
+                    }
+                    div {
+                        padding: 10px 10px 10px 30px;
+                        color: #636363;
+                    }
+                }
+            }
+        }
+    }
 }
