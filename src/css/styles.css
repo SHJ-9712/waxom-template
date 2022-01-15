@@ -1154,4 +1154,9 @@ header .container .searchForm form button[type=submit] svg {
   align-items: center;
 }
 
+footer {
+  padding-top: 50px;
+  background-color: #191919;
+}
+
 /*# sourceMappingURL=styles.css.map */
