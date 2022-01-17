@@ -1196,9 +1196,23 @@ footer .footer-info .box ul li div {
   font-size: 14px;
   line-height: 1.7em;
   color: #8c8c8c;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
 }
 footer .footer-info .box ul li p {
   font-size: 12px;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+footer .footer-info .box ul li:hover div {
+  color: #c7b299;
+}
+footer .footer-info .box ul li:hover p {
+  color: #979797;
 }
 footer .footer-info .contact-info ul {
   position: relative;
@@ -1247,6 +1261,15 @@ footer .footer-copy .sns ul li {
 footer .footer-copy .sns ul li svg {
   width: 20px;
   height: 20px;
+}
+footer .footer-copy .sns ul li svg path {
+  -webkit-transition: fill 0.3s;
+  -moz-transition: fill 0.3s;
+  -o-transition: fill 0.3s;
+  transition: fill 0.3s;
+}
+footer .footer-copy .sns ul li:hover svg path {
+  fill: #c7b299;
 }
 footer .footer-copy .copyright {
   float: left;

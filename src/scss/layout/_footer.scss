@@ -32,9 +32,15 @@ footer {
                         font-size: 14px;
                         line-height: 1.7em;
                         color: $sub-color;
+                        @include prefix(transition, color 0.3s, webkit moz o);
                     }
                     p {
                         font-size: 12px;
+                        @include prefix(transition, color 0.3s, webkit moz o);
+                    }
+                    &:hover {
+                        div {color: $primary-color;}
+                        p {color: #979797;}
                     }
                 }
             }
@@ -87,6 +93,12 @@ footer {
                     svg {
                         width: 20px;
                         height: 20px;
+                        path {@include prefix(transition, fill 0.3s, webkit moz o);}
+                    }
+                    &:hover {
+                        svg {
+                            path {fill: $primary-color;}
+                        }
                     }
                 }
             }
