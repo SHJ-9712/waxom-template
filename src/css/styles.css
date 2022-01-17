@@ -1159,7 +1159,7 @@ footer {
   background-color: #191919;
 }
 footer .footer-info {
-  padding: 35px 14px 0;
+  padding: 35px;
 }
 footer .footer-info .box {
   margin-bottom: 20px;
@@ -1226,6 +1226,35 @@ footer .footer-info .contact-info ul li svg {
 footer .footer-info .contact-info ul li div {
   padding: 10px 10px 10px 30px;
   color: #636363;
+}
+footer .footer-copy {
+  padding: 22px;
+  font-size: 13px;
+  line-height: 1.7em;
+  color: #515151;
+  background-color: #111;
+}
+footer .footer-copy .sns {
+  padding-right: 15px;
+}
+footer .footer-copy .sns ul {
+  float: right;
+}
+footer .footer-copy .sns ul li {
+  margin-left: 16px;
+  float: left;
+}
+footer .footer-copy .sns ul li svg {
+  width: 20px;
+  height: 20px;
+}
+footer .footer-copy .copyright {
+  float: left;
+}
+footer .footer-copy .copyright a {
+  display: inline-block;
+  color: #636363;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=styles.css.map */
