@@ -142,4 +142,11 @@ var swiper = new Swiper(".partners-swiper", {
         delay: 2500,
         disableOnInteraction: false,
     },
+    // tablet
+    breakpoints: {
+        768: {
+            slidesPerView : 2,
+            centeredSlides: false,
+        }
+    }
 });
