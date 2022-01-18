@@ -121,6 +121,14 @@ var swiper = new Swiper(".posts-swiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    // tablet
+    breakpoints: {
+        768: {
+            slidesPerView : 2,
+            centeredSlides: false,
+            slidesPerGroup: 2
+        },
+    }
 });
 
 // partners swiper
