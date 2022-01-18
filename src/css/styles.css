@@ -960,6 +960,18 @@ header .container .searchForm form button[type=submit] svg {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 48rem) {
+  .excellent-mobile .img-box {
+    margin-bottom: 0;
+    width: 40%;
+    float: left;
+  }
+  .excellent-mobile .moblie-device-info {
+    padding-top: 80px;
+    width: 60%;
+    float: right;
+  }
+}
 .counter-banner {
   padding: 50px 0;
   background-color: #2f2928;

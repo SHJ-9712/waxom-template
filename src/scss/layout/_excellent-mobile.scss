@@ -49,3 +49,19 @@
         }
     }
 }
+
+// tablet
+@include tablet {
+    .excellent-mobile {
+        .img-box {
+            margin-bottom: 0;
+            width: 40%;
+            float: left;
+        }
+        .moblie-device-info {
+            padding-top: 80px;
+            width: 60%;
+            float: right;
+        }
+    }
+}
