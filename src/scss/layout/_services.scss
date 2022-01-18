@@ -39,3 +39,15 @@
         }
     }
 }
+
+// tablet
+@include tablet {
+        .services {
+            ul {
+                li {
+                    width: 50%;
+                    display: inline-block;
+                }
+            }
+        }
+}

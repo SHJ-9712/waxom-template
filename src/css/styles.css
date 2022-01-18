@@ -606,6 +606,12 @@ header .container .searchForm form button[type=submit] svg {
   margin-bottom: 35px;
 }
 
+@media screen and (min-width: 48rem) {
+  .services ul li {
+    width: 50%;
+    display: inline-block;
+  }
+}
 .introduce {
   margin-top: 60px;
   padding-top: 90px;
@@ -1250,6 +1256,7 @@ footer .footer-copy {
 }
 footer .footer-copy .sns {
   padding-right: 15px;
+  float: right;
 }
 footer .footer-copy .sns ul {
   float: right;
