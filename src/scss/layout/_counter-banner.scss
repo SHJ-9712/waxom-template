@@ -31,3 +31,20 @@
         }
     }
 }
+
+// tablet
+@include tablet {
+    .counter-banner {
+        .container {
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-box;
+            display: flex;
+            .icon-box {
+                margin-bottom: 0;
+                .counter-number {font-size: 42px;}
+            }
+        }
+    }
+}
