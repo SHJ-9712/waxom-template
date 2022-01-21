@@ -114,3 +114,15 @@ footer {
         }
     }
 }
+
+// tablet
+@include tablet {
+    footer {
+        .footer-info {
+            .box {
+                width: 50%;
+                display: inline-block;
+            }
+        }
+    }
+}

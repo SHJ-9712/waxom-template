@@ -1314,4 +1314,11 @@ footer .footer-copy .copyright a {
   font-weight: 600;
 }
 
+@media screen and (min-width: 48rem) {
+  footer .footer-info .box {
+    width: 50%;
+    display: inline-block;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
