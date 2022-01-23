@@ -93,3 +93,12 @@
         }
     }
 }
+
+// desktop
+@include desktop {
+    .main-visual {
+        .swiper-wrapper {
+            margin-top: 0;
+        }
+    }
+}

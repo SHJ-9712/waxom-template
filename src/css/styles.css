@@ -574,6 +574,11 @@ header .container .searchForm form button[type=submit] svg {
   transform: scale(0.4);
 }
 
+@media screen and (min-width: 64rem) {
+  .main-visual .swiper-wrapper {
+    margin-top: 0;
+  }
+}
 .services {
   margin-top: 60px;
 }
