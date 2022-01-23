@@ -1,4 +1,14 @@
-const desktopMq = window.matchMedia("screen and (min-width: 64rem)").matches;
+const windowWidthTablet = window.matchMedia("screen and (max-width: 48rem)");
+
+// header scroll event
+const header = document.querySelector('header');
+window.addEventListener('scroll', function() {
+    if(document.documentElement.scrollTop > 0) {
+        header.classList.add('sticky');
+    } else {
+        header.classList.remove('sticky');
+    }
+});
 
 // header search btn
 const searchBtn = document.querySelector('header .searchBtn');
@@ -17,7 +27,7 @@ searchBtn.addEventListener('click', () => {
         }, 100);
     }
 });
-if(desktopMq) {
+if(windowWidthTablet) {
     searchForm.addEventListener('mouseleave', () => {
         searchForm.style.height = '0';
         setTimeout(() => {
@@ -29,21 +39,23 @@ if(desktopMq) {
 // header Mobile, Tablet toggle menu
 const toggleMenu = document.querySelector('.toggleMenu');
 const categories = document.querySelector('.categories');
-toggleMenu.addEventListener('click', () => {
-    if(categories.style.display == 'block') {
-        categories.style.right = '-341px';
-        setTimeout(() => {
-            categories.style.display = 'none';
-        }, 400);
-        toggleMenu.classList.remove('on');
-    } else {
-        categories.style.display = 'block';
-        setTimeout(() => {
-            categories.style.right = '-21px';
-        }, 100);
-        toggleMenu.classList.add('on');
-    }
-});
+if(windowWidthTablet) {
+    toggleMenu.addEventListener('click', () => {
+        if(categories.style.display == 'block') {
+            categories.style.right = '-341px';
+            setTimeout(() => {
+                categories.style.display = 'none';
+            }, 400);
+            toggleMenu.classList.remove('on');
+        } else {
+            categories.style.display = 'block';
+            setTimeout(() => {
+                categories.style.right = '-21px';
+            }, 100);
+            toggleMenu.classList.add('on');
+        }
+    });
+}
 
 // main swiper
 var swiper = new Swiper('.main-visual', {

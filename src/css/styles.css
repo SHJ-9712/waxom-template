@@ -311,6 +311,10 @@ header {
   top: 0;
   background-color: #fff;
   box-shadow: 0 3px 6px rgba(18, 18, 18, 0.36);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
   z-index: 9999;
 }
 header .container .logo {
@@ -323,12 +327,15 @@ header .container .logo {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  z-index: 9999;
 }
-header .container .logo a {
+header .container .logo .mini-logo {
   width: 182px;
   height: 56px;
-  display: block;
   background: url(../images/mobile_logo.png) no-repeat center;
+}
+header .container .logo .desktop-logo {
+  display: none;
 }
 header .container .gnb {
   position: relative;
@@ -464,8 +471,85 @@ header .container .searchForm form button[type=submit] svg {
 
 @media screen and (min-width: 64rem) {
   header {
+    padding: 2.5rem 0;
     background: transparent;
     box-shadow: none;
+  }
+  header .container {
+    position: relative;
+  }
+  header .container .logo {
+    width: 171px;
+    height: 56px;
+    margin-left: 1.3125rem;
+    position: absolute;
+    left: 0;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+  header .container .logo .mini-logo {
+    display: none;
+  }
+  header .container .logo .desktop-logo {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url(../images/logo-white.png) no-repeat center;
+  }
+  header .container .gnb {
+    float: right;
+  }
+  header .container .gnb .categories {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 0;
+    background-color: transparent;
+    position: static;
+  }
+  header .container .gnb .categories li {
+    margin: 0 16px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+  }
+  header .container .gnb .categories li a:hover {
+    color: #c7b299;
+  }
+  header .container .gnb .categories .current-page {
+    color: #c7b299;
+  }
+  header .container .gnb .iconMenu {
+    margin-left: 14px;
+    float: right;
+  }
+  header .container .gnb .iconMenu li a svg, header .container .gnb .iconMenu li button[type=button] svg {
+    fill: #fff;
+  }
+  header .container .gnb .iconMenu .toggleMenu {
+    display: none;
+  }
+  header .container .gnb .iconMenu .searchBtn {
+    float: none;
+  }
+
+  header.sticky {
+    padding: 1.25rem 0;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(18, 18, 18, 0.36);
+  }
+  header.sticky .logo .desktop-logo {
+    background-image: url(../images/logo_dark.png);
+  }
+  header.sticky .gnb .categories li {
+    color: #8c8c8c;
+  }
+  header.sticky .gnb .iconMenu li a svg, header.sticky .gnb .iconMenu li button[type=button] svg {
+    fill: #8c8c8c;
   }
 }
 .main-visual {
