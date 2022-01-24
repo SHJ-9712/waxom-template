@@ -1423,5 +1423,21 @@ footer .footer-copy .copyright a {
     display: inline-block;
   }
 }
+@media screen and (min-width: 64rem) {
+  footer .footer-info {
+    max-width: 71.25rem;
+    margin: 0 auto;
+    display: flex;
+  }
+  footer .footer-info .box {
+    padding: 0 15px;
+  }
+  footer .footer-info .box:first-of-type {
+    padding-left: 0;
+  }
+  footer .footer-info .box:last-of-type {
+    padding-right: 0;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

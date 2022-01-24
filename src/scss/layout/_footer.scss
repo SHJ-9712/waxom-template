@@ -126,3 +126,19 @@ footer {
         }
     }
 }
+
+// desktop
+@include desktop {
+    footer {
+        .footer-info {
+            max-width: 71.25rem;
+            margin: 0 auto;
+            display: flex;
+            .box {
+                padding: 0 15px;
+                &:first-of-type {padding-left: 0;}
+                &:last-of-type {padding-right: 0;}
+            }
+        }
+    }
+}
