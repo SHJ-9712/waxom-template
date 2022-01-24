@@ -140,6 +140,13 @@ var swiper = new Swiper(".posts-swiper", {
             centeredSlides: false,
             slidesPerGroup: 2
         },
+    },
+    breakpoints: {
+        1024: {
+            slidesPerView : 3,
+            centeredSlides: false,
+            slidesPerGroup: 2
+        },
     }
 });
 
