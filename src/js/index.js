@@ -81,6 +81,11 @@ var swiper = new Swiper('.main-visual', {
     }
 });
 
+// latest projects category filter
+const filterList = document.querySelector('.latest-projects .projects-wrap .filters');
+const filterItems = document.querySelector('.latest-projects .projects-wrap .projects-list');
+
+
 // video modal
 const playBtn = document.querySelector('.video-section .youtube-play-btn');
 const videoModal = document.querySelector('.video-modal');
@@ -133,20 +138,18 @@ var swiper = new Swiper(".posts-swiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-    // tablet
+    // tablet, desktop
     breakpoints: {
         768: {
             slidesPerView : 2,
             centeredSlides: false,
             slidesPerGroup: 2
         },
-    },
-    breakpoints: {
         1024: {
             slidesPerView : 3,
             centeredSlides: false,
             slidesPerGroup: 2
-        },
+        }
     }
 });
 
@@ -159,13 +162,18 @@ var swiper = new Swiper(".partners-swiper", {
     freeMode: false,
     autoplay: {
         delay: 2500,
-        disableOnInteraction: false,
+        disableOnInteraction: false
     },
-    // tablet
+    // tablet, desktop
     breakpoints: {
         768: {
             slidesPerView : 2,
+            centeredSlides: false
+        },
+        1024: {
+            slidesPerView : 4,
             centeredSlides: false,
+            loop: false
         }
     }
 });
