@@ -707,6 +707,14 @@ header .container .searchForm form button[type=submit] svg {
     display: inline-block;
   }
 }
+@media screen and (min-width: 64rem) {
+  .services ul {
+    display: flex;
+  }
+  .services ul li {
+    padding: 0 15px;
+  }
+}
 .introduce {
   margin-top: 60px;
   padding-top: 90px;

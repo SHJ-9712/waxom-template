@@ -51,3 +51,15 @@
             }
         }
 }
+
+// desktop
+@include desktop {
+    .services {
+        ul {
+            display: flex;
+            li {
+                padding: 0 15px;
+            }
+        }
+    }
+}
