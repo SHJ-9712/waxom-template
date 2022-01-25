@@ -791,7 +791,7 @@ header .container .searchForm form button[type=submit] svg {
 }
 .latest-projects .projects-wrap .projects-list .project-item {
   width: 250px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   overflow: hidden;
 }
 .latest-projects .projects-wrap .projects-list .project-item .item-banner {
@@ -931,8 +931,17 @@ header .container .searchForm form button[type=submit] svg {
   display: none;
 }
 .latest-projects .projects-wrap .project-load-btn {
-  margin-top: 55px;
+  padding-top: 20px;
   text-align: center;
+}
+@media screen and (min-width: 48rem) {
+  .latest-projects .projects-wrap .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .latest-projects .projects-wrap .projects-list .project-item {
+    width: 330px;
+  }
 }
 .video-section {
   margin-top: 55px;
