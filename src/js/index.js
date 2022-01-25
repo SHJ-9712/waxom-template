@@ -81,10 +81,15 @@ var swiper = new Swiper('.main-visual', {
     }
 });
 
-// latest projects category filter
-const filterList = document.querySelector('.latest-projects .projects-wrap .filters');
-const filterItems = document.querySelector('.latest-projects .projects-wrap .projects-list');
-
+// latest projects
+const loadMoreBtn = document.querySelector('.latest-projects .projects-wrap .project-load-btn > button');
+const moreProject = document.querySelectorAll('.latest-projects .projects-wrap .projects-list .more-project');
+function moreProjectHandler() {
+    for(let i=0; i<moreProject.length; i++) {
+        moreProject[i].style.display = 'block';
+    }
+}
+loadMoreBtn.addEventListener('click', moreProjectHandler);
 
 // video modal
 const playBtn = document.querySelector('.video-section .youtube-play-btn');
