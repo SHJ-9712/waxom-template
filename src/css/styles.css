@@ -943,6 +943,22 @@ header .container .searchForm form button[type=submit] svg {
     width: 330px;
   }
 }
+@media screen and (min-width: 64rem) {
+  .latest-projects .projects-wrap .filters {
+    display: block;
+  }
+  .latest-projects .projects-wrap .filters li {
+    margin: 0 5px;
+    display: inline-block;
+  }
+  .latest-projects .projects-wrap .filters li button[type=button] {
+    width: auto;
+    padding: 10px 20px;
+  }
+  .latest-projects .projects-wrap .projects-list .project-item {
+    width: 360px;
+  }
+}
 .video-section {
   margin-top: 55px;
   padding: 110px 0;

@@ -194,3 +194,27 @@
         }
     }
 }
+
+// desktop
+@include desktop {
+    .latest-projects {
+        .projects-wrap {
+            .filters {
+                display: block;
+                li {
+                    margin: 0 5px;
+                    display: inline-block;
+                    button[type=button] {
+                        width: auto;
+                        padding: 10px 20px;
+                    }
+                }
+            }
+            .projects-list {
+                .project-item {
+                    width: 360px;
+                }
+            }
+        }
+    }
+}
