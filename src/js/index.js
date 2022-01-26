@@ -82,6 +82,15 @@ var swiper = new Swiper('.main-visual', {
 });
 
 // latest projects
+const projectCategory = document.querySelectorAll('.latest-projects .projects-wrap .filters > li');
+for(let i=0; i<projectCategory.length; i++) {
+    projectCategory[i].addEventListener('click', function() {
+        for(let j=0; j<projectCategory.length; j++) {
+            projectCategory[j].classList.remove('active');
+        }
+        this.classList.add('active');
+    });
+}
 const loadMoreBtn = document.querySelector('.latest-projects .projects-wrap .project-load-btn > button');
 const moreProject = document.querySelectorAll('.latest-projects .projects-wrap .projects-list .more-project');
 function moreProjectHandler() {
