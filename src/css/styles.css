@@ -570,25 +570,54 @@ header .container .searchForm form button[type=submit] svg {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+.main-visual .swiper-wrapper .swiper-slide .slogan > * {
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 0;
+}
 .main-visual .swiper-wrapper .swiper-slide .slogan strong {
+  display: block;
   font-size: 20px;
   letter-spacing: 1px;
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  -o-animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 .main-visual .swiper-wrapper .swiper-slide .slogan h3 {
   margin: 0;
   padding: 10px 0;
   font-size: 38px;
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  -o-animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 .main-visual .swiper-wrapper .swiper-slide .slogan p {
   max-width: 600px;
   margin: 0 auto;
   font-size: 12px;
   line-height: 16px;
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  -o-animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 .main-visual .swiper-wrapper .swiper-slide .slogan .link-btn {
   margin-top: 49px;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
 }
 .main-visual .swiper-wrapper .slide1 {
   background-image: url(../images/mainslide_01.jpg);
@@ -598,6 +627,30 @@ header .container .searchForm form button[type=submit] svg {
 }
 .main-visual .swiper-wrapper .slide3 {
   background-image: url(../images/mainslide_03.jpg);
+}
+.main-visual .swiper-wrapper .swiper-slide-active .slogan > * {
+  -webkit-animation: textUpAnimation 0.8s forwards ease-out;
+  -moz-animation: textUpAnimation 0.8s forwards ease-out;
+  -o-animation: textUpAnimation 0.8s forwards ease-out;
+  animation: textUpAnimation 0.8s forwards ease-out;
+}
+@keyframes textUpAnimation {
+  from {
+    -webkit-transform: translateY(40%);
+    -moz-transform: translateY(40%);
+    -ms-transform: translateY(40%);
+    -o-transform: translateY(40%);
+    transform: translateY(40%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 .main-visual .swiper-pagination {
   position: absolute;
