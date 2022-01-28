@@ -81,6 +81,15 @@ var swiper = new Swiper('.main-visual', {
     }
 });
 
+// services list scoll down view
+const services = document.querySelector('.services');
+window.addEventListener('scroll', function() {
+    const serviceThreshold = services.scrollHeight - 250;
+    if(document.documentElement.scrollTop > serviceThreshold) {
+        services.classList.add('scrollDownView');
+    }
+});
+
 // latest projects
 const projectCategory = document.querySelectorAll('.latest-projects .projects-wrap .filters > li');
 for(let i=0; i<projectCategory.length; i++) {
